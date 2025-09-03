@@ -15,7 +15,15 @@ A lightweight real‑time chat application built with Node.js, Express, and Sock
 - Client‑side filtering to only display messages for the active room
 - Static assets served by Express (`/public`)
 
-## 3. Tech Stack
+## 3. Screenshots
+
+| Chat UI (rooms)                         | Multiple tabs demo                      |
+| --------------------------------------- | --------------------------------------- |
+| ![Chat Screenshot 1](screenshots/1.png) | ![Chat Screenshot 2](screenshots/2.png) |
+
+> The first image shows the main interface with room selection; the second shows concurrent sessions demonstrating real‑time updates.
+
+## 4. Tech Stack
 
 - Runtime: Node.js (LTS)
 - Server: Express + Socket.IO
@@ -24,7 +32,7 @@ A lightweight real‑time chat application built with Node.js, Express, and Sock
 
 Apache handles HTTP→HTTPS redirect and WebSocket upgrade (via `proxy_wstunnel`). The Node process is managed by `systemd` for autorestart.
 
-## 4. Local Development
+## 5. Local Development
 
 ```bash
 npm install
@@ -34,7 +42,7 @@ npm start
 
 Open multiple browser tabs to simulate different users. Change room name and nickname to test behavior.
 
-## 5. Input Sanitization (Server)
+## 6. Input Sanitization (Server)
 
 | Item     | Limits / Rules                                   |
 | -------- | ------------------------------------------------ |
